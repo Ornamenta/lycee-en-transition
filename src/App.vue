@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
+import Cta from "./components/Cta.vue";
 </script>
 
 <template>
@@ -14,7 +14,7 @@ import HelloWorld from "./components/HelloWorld.vue";
     />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <Cta type="landing" btn_text="Discover !" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -26,7 +26,7 @@ import HelloWorld from "./components/HelloWorld.vue";
   <RouterView />
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -45,7 +45,7 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: $color-text;
 }
 
 nav a.router-link-exact-active:hover {
@@ -55,7 +55,7 @@ nav a.router-link-exact-active:hover {
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  border-left: 1px solid $color-border;
 }
 
 nav a:first-of-type {
@@ -66,7 +66,7 @@ nav a:first-of-type {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    padding-right: calc($section-gap / 2);
   }
 
   .logo {
