@@ -1,0 +1,60 @@
+/*
+Format:
+--dt-c-xxx - dynamic theme color xxx
+--dt-f-xxx - dynamic theme font xxx
+--dt-s-xxx - dynamic theme size xxx
+*/
+
+
+/* To change theme, change the body class in index.html */
+/* Dark theme */
+body.theme--dark {
+  --dt-c-background: #121212;
+  --dt-c-on-background: #ffffff;
+
+
+  /* Green */
+  --dt-c-primary: #1b5e20;
+  --dt-c-primary-light: #4c8c4a;
+  --dt-c-primary-dark: #003300;
+
+  --dt-c-on-primary: #ffffff;
+  
+
+  /* Orange */
+  --dt-c-secondary: #ff8f00;
+  --dt-c-secondary-light: #ffc046;
+  --dt-c-secondary-dark: #c56000;
+
+  --dt-c-on-secondary: #000000;
+
+  /* Cta */
+  --dt-s-cta-height: 64px;
+  --dt-f-cta-text: monospace;
+}
+
+/* Blue theme */
+body.theme--blue {
+  --dt-c-background: #121212;
+  --dt-c-on-background: #ffffff;
+
+
+  /* Green */
+  --dt-c-primary: #1b5e20;
+  --dt-c-primary-light: #4c8c4a;
+  --dt-c-primary-dark: #003300;
+
+  --dt-c-on-primary: #ffffff;
+  
+
+  /* Orange */
+  --dt-c-secondary: #3500c5;
+  --dt-c-secondary-light: #ffc046;
+  --dt-c-secondary-dark: #c56000;
+
+  --dt-c-on-secondary: #000000;
+
+  /* Cta */
+  --dt-s-cta-height: 64px;
+  --dt-f-cta-text: monospace;
+}

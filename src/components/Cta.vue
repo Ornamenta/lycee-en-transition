@@ -18,14 +18,18 @@ defineProps({
 
 <style scoped lang="scss">
 .cta {
-  background-color: $dt-c-black;
-  color: $dt-c-white;
-  border-radius: 4px;
+  height: var(--dt-s-cta-height);
+  padding: 0 25px;
+  font-size: 1.4rem;
+  background-color: var(--dt-c-background);
+  font-family: var(--dt-f-cta-text);
+  color: var(--dt-c-on-background);
+  border-radius: calc(var(--dt-s-cta-height) / 2);
   &--default {
-    color: $dt-c-white; // Placeholder
+    color: var(--dt-c-on-background); // Placeholder
   }
   &--landing {
-    border: 2px solid $dt-c-secondary-accent;
+    border: 2px solid var(--dt-c-secondary);
   }
 }
 </style>

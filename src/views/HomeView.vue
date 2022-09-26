@@ -1,15 +1,10 @@
+<script setup>
+import Cta from "@/components/Cta.vue";
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is the home page</h1>
+  <div class="home">
+    <h1>Components</h1>
+    <Cta type="landing" btn_text="Discover !" />
   </div>
 </template>
-
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
